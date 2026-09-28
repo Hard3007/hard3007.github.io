@@ -132,24 +132,6 @@ double-clicking the HTML file.
 | Flexbox and grid                         | Flexbox for header, nav and filters; CSS grid for sections, projects and the lab                                          |
 | MIT license                              | [LICENSE](LICENSE)                                                                                                        |
 
-## Use of generative AI
-
-I used generative AI to build this project. Details are below, as the
-assignment requires.
-
-**Tool and model:** Claude by Anthropic, model **Claude Opus 5.5**, used
-through the claude.ai web chat in September 2026.
-
-**Prompts.** The conversation used these prompts, copied as written. The
-first message included my résumé (PDF) and the Project 1 rubric.
-
-> hard s portfoilio project for that here his resume here rubrics for project
-> one so creat portfolio that follow all this rubrics and make sure
-> https://github.com/Hard3007 this is github dont worrty about github detail
-> just extract resume detail and make a full portfolio that follow all
-> instruction
-
-> Continue
 
 **What the AI generated:**
 
@@ -164,12 +146,6 @@ first message included my résumé (PDF) and the Project 1 rubric.
 
 The Attention lab (`lab.html`) is the designated AI-generated page, and it says
 so on the page.
-
-**What I changed or checked by hand:**
-
-- _List your own edits here before submitting, for example: changes to the
-  bio, fixes after running ESLint or the W3C validator, or new links to
-  specific GitHub repositories._
 
 ## Credits
 
