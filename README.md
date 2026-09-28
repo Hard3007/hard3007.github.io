@@ -7,6 +7,7 @@ CSS3 and ES6 modules, with no frameworks or libraries.
 - **Live site:** https://hard3007.github.io/
 - **Demo video:** _add the link to your narrated video here_
 - **Design document:** [docs/design-document.md](docs/design-document.md)
+- **Slides ppt:** [https://docs.google.com/presentation/d/1enGYWI5TbWMFGkQjW5wOAijumX6nqJwImx6Pqzk_Lrc/edit?usp=sharing]
 
 ![Homepage of Hard Gondaliya's portfolio, showing the interactive attention headline](docs/screenshots/home-desktop.png)
 
