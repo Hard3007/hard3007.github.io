@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Hard Gondaliya</title>
+    <meta name="author" content="Hard Gondaliya" />
+    <meta
+      name="description"
+      content="Machine learning projects by Hard Gondaliya: a RAG contract analyzer, a Transformer built from scratch, FPGA satellite inference, YOLOv11 waste detection and more."
+    />
+    <meta name="theme-color" content="#edf1f2" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects | Hard Gondaliya" />
+    <meta
+      property="og:description"
+      content="Language models, computer vision and models deployed on constrained hardware."
+    />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="./images/favicon-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/pages/projects.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a class="site-mark" href="./index.html">Hard Gondaliya</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-list" id="nav-list">
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li>
+              <a class="nav-link" href="./projects.html" aria-current="page"
+                >Projects</a
+              >
+            </li>
+            <li><a class="nav-link" href="./lab.html">Attention lab</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="main">
+      <div class="page-intro">
+        <h1 class="page-title">Projects</h1>
+        <p class="lede">
+          Language models, computer vision, and models that have to run on real
+          hardware. Filter by area, or scroll through all six.
+        </p>
+      </div>
+
+      <div
+        class="filter-toolbar"
+        role="group"
+        aria-label="Filter projects by area"
+      >
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="all"
+          aria-pressed="true"
+        >
+          All
+        </button>
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="language"
+          aria-pressed="false"
+        >
+          Language and LLMs
+        </button>
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="vision"
+          aria-pressed="false"
+        >
+          Computer vision
+        </button>
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="systems"
+          aria-pressed="false"
+        >
+          Systems and deployment
+        </button>
+      </div>
+      <p class="filter-status" aria-live="polite">Showing all 6 projects.</p>
+
+      <ul class="project-list">
+        <li class="project-item" data-tags="language systems">
+          <article class="project" aria-labelledby="project-tos">
+            <img
+              class="project-image"
+              src="./images/projects/tos-risk-analyzer.svg"
+              alt="Diagram of contract text chunks retrieved from a vector index into a cited risk summary"
+              width="640"
+              height="400"
+            />
+            <div class="project-body">
+              <h2 class="project-title" id="project-tos">
+                Terms of Service Risk Analyzer
+              </h2>
+              <p class="project-meta">Personal project, 2026</p>
+              <ul class="project-points">
+                <li>
+                  Built an end-to-end retrieval-augmented generation (RAG)
+                  system that parses dense user agreements, embedding legal text
+                  chunks with Hugging Face sentence-transformers into a FAISS
+                  vector index.
+                </li>
+                <li>
+                  Used an LLM API with constrained prompts to extract hidden
+                  privacy clauses and arbitration rules, producing grounded risk
+                  summaries with exact document citations.
+                </li>
+                <li>
+                  Served it through a FastAPI backend, containerized with Docker
+                  and deployed on AWS EC2, processing multi-page contracts in
+                  under 15 seconds.
+                </li>
+              </ul>
+              <ul class="tag-list" aria-label="Tools used">
+                <li class="tag">Python</li>
+                <li class="tag">Hugging Face</li>
+                <li class="tag">FAISS</li>
+                <li class="tag">FastAPI</li>
+                <li class="tag">Docker</li>
+                <li class="tag">AWS EC2</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://github.com/Hard3007">Code on GitHub</a>
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <li class="project-item" data-tags="language">
+          <article class="project" aria-labelledby="project-transformer">
+            <img
+              class="project-image"
+              src="./images/projects/transformer-from-scratch.svg"
+              alt="Heatmap of a causal self-attention matrix with the upper triangle masked"
+              width="640"
+              height="400"
+            />
+            <div class="project-body">
+              <h2 class="project-title" id="project-transformer">
+                Transformer language model from scratch
+              </h2>
+              <p class="project-meta">Personal project, 2026</p>
+              <ul class="project-points">
+                <li>
+                  Implemented a Transformer encoder and an autoregressive
+                  language model from scratch in PyTorch, including multi-head
+                  self-attention, positional encodings and causal masking.
+                </li>
+                <li>
+                  Reached 99.7% test accuracy on sequence classification and
+                  5.30 perplexity on language modeling, tracking runs and
+                  hyperparameters with MLflow.
+                </li>
+              </ul>
+              <ul class="tag-list" aria-label="Tools used">
+                <li class="tag">Python</li>
+                <li class="tag">PyTorch</li>
+                <li class="tag">MLflow</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://github.com/Hard3007">Code on GitHub</a>. The
+                same attention math runs live in the
+                <a href="./lab.html">attention lab</a>.
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <li class="project-item" data-tags="language">
+          <article class="project" aria-labelledby="project-toxic">
+            <img
+              class="project-image"
+              src="./images/projects/toxic-comment-distilbert.svg"
+              alt="Bar chart of toxicity label probabilities predicted for one comment"
+              width="640"
+              height="400"
+            />
+            <div class="project-body">
+              <h2 class="project-title" id="project-toxic">
+                Toxic comment classification with DistilBERT
+              </h2>
+              <p class="project-meta">Personal project, 2026</p>
+              <ul class="project-points">
+                <li>
+                  Fine-tuned DistilBERT on the Jigsaw toxic comment dataset with
+                  Hugging Face Transformers.
+                </li>
+                <li>
+                  Benchmarked transfer learning against a feedforward neural
+                  network trained from scratch as a baseline.
+                </li>
+              </ul>
+              <ul class="tag-list" aria-label="Tools used">
+                <li class="tag">Python</li>
+                <li class="tag">Hugging Face Transformers</li>
+                <li class="tag">PyTorch</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://github.com/Hard3007">Code on GitHub</a>
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <li class="project-item" data-tags="vision systems">
+          <article class="project" aria-labelledby="project-fpga">
+            <img
+              class="project-image"
+              src="./images/projects/fpga-satellite-inference.svg"
+              alt="Satellite image tiles flowing into a quantized CNN running on an FPGA chip"
+              width="640"
+              height="400"
+            />
+            <div class="project-body">
+              <h2 class="project-title" id="project-fpga">
+                On-board CNN inference for satellite imagery
+              </h2>
+              <p class="project-meta">
+                Internship at the Space Applications Centre, ISRO, 2025
+              </p>
+              <ul class="project-points">
+                <li>
+                  Engineered a real-time CNN inference pipeline on FPGA for
+                  high-throughput satellite imagery at 30+ FPS, cutting latency
+                  by 40%.
+                </li>
+                <li>
+                  Connected image reconstruction, preprocessing and inference
+                  into one workflow handling 10,000+ images a day.
+                </li>
+                <li>
+                  Quantized models with Vitis AI and kept 98% accuracy under
+                  on-board resource limits.
+                </li>
+              </ul>
+              <ul class="tag-list" aria-label="Tools used">
+                <li class="tag">CNN</li>
+                <li class="tag">Vitis AI</li>
+                <li class="tag">FPGA</li>
+                <li class="tag">Quantization</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project-item" data-tags="vision">
+          <article class="project" aria-labelledby="project-waste">
+            <img
+              class="project-image"
+              src="./images/projects/waste-detection-yolo.svg"
+              alt="Conveyor belt with a bottle, a can and a box, each inside a labelled detection box"
+              width="640"
+              height="400"
+            />
+            <div class="project-body">
+              <h2 class="project-title" id="project-waste">
+                Waste detection and classification
+              </h2>
+              <p class="project-meta">Personal project, 2024</p>
+              <ul class="project-points">
+                <li>
+                  Built a real-time computer vision system with YOLOv11 that
+                  reaches 94%+ detection accuracy.
+                </li>
+                <li>
+                  Connected detections to automated conveyor-belt sorting and
+                  used data augmentation to stay robust to lighting and clutter.
+                </li>
+              </ul>
+              <ul class="tag-list" aria-label="Tools used">
+                <li class="tag">Python</li>
+                <li class="tag">YOLOv11</li>
+                <li class="tag">OpenCV</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://github.com/Hard3007">Code on GitHub</a>
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <li class="project-item" data-tags="vision">
+          <article class="project" aria-labelledby="project-plant">
+            <img
+              class="project-image"
+              src="./images/projects/plant-disease-detection.svg"
+              alt="Leaf with disease spots and a local binary pattern grid extracted from it"
+              width="640"
+              height="400"
+            />
+            <div class="project-body">
+              <h2 class="project-title" id="project-plant">
+                Plant disease detection
+              </h2>
+              <p class="project-meta">Internship at SVNIT, 2024</p>
+              <ul class="project-points">
+                <li>
+                  Evaluated 2,500+ annotated images from the PlantDoc dataset
+                  for a research publication.
+                </li>
+                <li>
+                  Trained deep neural networks to 95.8% peak validation accuracy
+                  using CLAHE contrast enhancement and Local Binary Pattern
+                  features.
+                </li>
+              </ul>
+              <ul class="tag-list" aria-label="Tools used">
+                <li class="tag">Deep learning</li>
+                <li class="tag">CLAHE</li>
+                <li class="tag">Local Binary Patterns</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <section class="section" aria-labelledby="publication-title">
+        <h2 class="section-title" id="publication-title">Publication</h2>
+        <div class="section-body">
+          <div class="publication">
+            <h3 class="publication-title">
+              Comprehensive Review on Waste Management System Using ML and DL
+              Algorithms
+            </h3>
+            <p class="publication-venue">
+              Gondaliya, H., et al.
+              <cite>Lecture Notes in Networks and Systems</cite>, Vol. 1579
+              (ASSET 2025). Springer, 2026. Peer-reviewed.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer-inner">
+        <p class="footer-note">
+          © <span class="current-year">2026</span> Hard Gondaliya. Built with
+          plain HTML, CSS and JavaScript modules.
+        </p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/Hard3007">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/hard-gondaliya">LinkedIn</a>
+          </li>
+          <li><a href="./files/Hard_Gondaliya_Resume.pdf">Résumé</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

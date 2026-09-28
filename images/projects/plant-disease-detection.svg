@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img">
+<title>Leaf with disease spots and a local binary pattern grid extracted from it</title>
+<rect width="640" height="400" fill="#f8fafa"/>
+<path d="M 90 300 C 90 180 180 90 300 80 C 300 200 220 300 90 300 Z" fill="#57c267"/>
+<path d="M 90 300 C 160 230 230 160 296 84" fill="none" stroke="#26848c" stroke-width="4"/>
+<circle cx="170" cy="190" r="14" fill="#411b66" opacity="0.8"/>
+<circle cx="215" cy="215" r="9" fill="#411b66" opacity="0.8"/>
+<circle cx="150" cy="240" r="10" fill="#411b66" opacity="0.8"/>
+<circle cx="236" cy="160" r="11" fill="#411b66" opacity="0.8"/>
+<circle cx="196" cy="258" r="7" fill="#411b66" opacity="0.8"/>
+<rect x="150" y="170" width="100" height="100" fill="none" stroke="#14213a" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M 256 200 L 372 150" stroke="#46546b" stroke-width="2" stroke-dasharray="4 5"/>
+<rect x="384" y="96" width="52" height="52" rx="4" fill="#bddb3d"/>
+<text x="410" y="130" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#14213a" text-anchor="middle">1</text>
+<rect x="440" y="96" width="52" height="52" rx="4" fill="#dfe6e8"/>
+<text x="466" y="130" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#14213a" text-anchor="middle">0</text>
+<rect x="496" y="96" width="52" height="52" rx="4" fill="#bddb3d"/>
+<text x="522" y="130" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#14213a" text-anchor="middle">1</text>
+<rect x="384" y="152" width="52" height="52" rx="4" fill="#bddb3d"/>
+<text x="410" y="186" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#14213a" text-anchor="middle">1</text>
+<rect x="440" y="152" width="52" height="52" rx="4" fill="#14213a"/>
+<rect x="496" y="152" width="52" height="52" rx="4" fill="#dfe6e8"/>
+<text x="522" y="186" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#14213a" text-anchor="middle">0</text>
+<rect x="384" y="208" width="52" height="52" rx="4" fill="#bddb3d"/>
+<text x="410" y="242" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#14213a" text-anchor="middle">1</text>
+<rect x="440" y="208" width="52" height="52" rx="4" fill="#bddb3d"/>
+<text x="466" y="242" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#14213a" text-anchor="middle">1</text>
+<rect x="496" y="208" width="52" height="52" rx="4" fill="#dfe6e8"/>
+<text x="522" y="242" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#14213a" text-anchor="middle">0</text>
+<text x="468" y="300" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#46546b" text-anchor="middle">local binary pattern</text>
+<text x="190" y="340" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#46546b" text-anchor="middle">diseased leaf region</text>
+</svg>

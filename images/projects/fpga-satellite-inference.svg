@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img">
+<title>Satellite image tiles flowing into a quantized CNN running on an FPGA chip</title>
+<rect width="640" height="400" fill="#f8fafa"/>
+<rect x="48" y="90" width="29" height="29" fill="#38a67c"/>
+<rect x="78" y="90" width="29" height="29" fill="#6ccc5d"/>
+<rect x="108" y="90" width="29" height="29" fill="#70cc5b"/>
+<rect x="138" y="90" width="29" height="29" fill="#c6dd3a"/>
+<rect x="168" y="90" width="29" height="29" fill="#88d152"/>
+<rect x="198" y="90" width="29" height="29" fill="#228e8c"/>
+<rect x="48" y="120" width="29" height="29" fill="#5ac664"/>
+<rect x="78" y="120" width="29" height="29" fill="#bbda3f"/>
+<rect x="108" y="120" width="29" height="29" fill="#9dd54a"/>
+<rect x="138" y="120" width="29" height="29" fill="#3ba97a"/>
+<rect x="168" y="120" width="29" height="29" fill="#25878c"/>
+<rect x="198" y="120" width="29" height="29" fill="#2e708b"/>
+<rect x="48" y="150" width="29" height="29" fill="#57c267"/>
+<rect x="78" y="150" width="29" height="29" fill="#5dc863"/>
+<rect x="108" y="150" width="29" height="29" fill="#24938a"/>
+<rect x="138" y="150" width="29" height="29" fill="#297d8c"/>
+<rect x="168" y="150" width="29" height="29" fill="#375b8b"/>
+<rect x="198" y="150" width="29" height="29" fill="#440355"/>
+<rect x="48" y="180" width="29" height="29" fill="#2e9d83"/>
+<rect x="78" y="180" width="29" height="29" fill="#21908c"/>
+<rect x="108" y="180" width="29" height="29" fill="#2e738c"/>
+<rect x="138" y="180" width="29" height="29" fill="#3d407e"/>
+<rect x="168" y="180" width="29" height="29" fill="#411964"/>
+<rect x="198" y="180" width="29" height="29" fill="#3b528b"/>
+<rect x="48" y="210" width="29" height="29" fill="#2c768c"/>
+<rect x="78" y="210" width="29" height="29" fill="#3d3f7e"/>
+<rect x="108" y="210" width="29" height="29" fill="#412069"/>
+<rect x="138" y="210" width="29" height="29" fill="#40266d"/>
+<rect x="168" y="210" width="29" height="29" fill="#365f8b"/>
+<rect x="198" y="210" width="29" height="29" fill="#5cc763"/>
+<rect x="48" y="240" width="29" height="29" fill="#3d3e7e"/>
+<rect x="78" y="240" width="29" height="29" fill="#3e3b7b"/>
+<rect x="108" y="240" width="29" height="29" fill="#297e8c"/>
+<rect x="138" y="240" width="29" height="29" fill="#3caa79"/>
+<rect x="168" y="240" width="29" height="29" fill="#65ca5f"/>
+<rect x="198" y="240" width="29" height="29" fill="#8bd151"/>
+<rect x="48" y="90" width="180" height="180" fill="none" stroke="#14213a" stroke-width="2"/>
+<text x="138" y="300" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#46546b" text-anchor="middle">satellite tiles</text>
+<path d="M 244 180 L 344 180" stroke="#46546b" stroke-width="3"/><path d="M 336 172 L 346 180 L 336 188" fill="none" stroke="#46546b" stroke-width="3"/>
+<text x="294" y="166" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" fill="#14213a" text-anchor="middle">INT8</text>
+<rect x="390" y="100" width="160" height="160" rx="10" fill="#14213a"/>
+<line x1="404" y1="100" x2="404" y2="84" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="260" x2="404" y2="276" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="390" y1="114" x2="374" y2="114" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="550" y1="114" x2="566" y2="114" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="426" y1="100" x2="426" y2="84" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="426" y1="260" x2="426" y2="276" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="390" y1="136" x2="374" y2="136" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="550" y1="136" x2="566" y2="136" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="448" y1="100" x2="448" y2="84" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="448" y1="260" x2="448" y2="276" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="390" y1="158" x2="374" y2="158" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="550" y1="158" x2="566" y2="158" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="470" y1="100" x2="470" y2="84" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="470" y1="260" x2="470" y2="276" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="390" y1="180" x2="374" y2="180" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="550" y1="180" x2="566" y2="180" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="492" y1="100" x2="492" y2="84" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="492" y1="260" x2="492" y2="276" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="390" y1="202" x2="374" y2="202" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="550" y1="202" x2="566" y2="202" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="514" y1="100" x2="514" y2="84" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="514" y1="260" x2="514" y2="276" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="390" y1="224" x2="374" y2="224" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="550" y1="224" x2="566" y2="224" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="536" y1="100" x2="536" y2="84" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="536" y1="260" x2="536" y2="276" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="390" y1="246" x2="374" y2="246" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<line x1="550" y1="246" x2="566" y2="246" stroke="#14213a" stroke-width="5" stroke-linecap="round"/>
+<rect x="418" y="128" width="22" height="22" rx="3" fill="#3d4280"/>
+<rect x="444" y="128" width="22" height="22" rx="3" fill="#2b788c"/>
+<rect x="470" y="128" width="22" height="22" rx="3" fill="#39a77b"/>
+<rect x="496" y="128" width="22" height="22" rx="3" fill="#7ecf56"/>
+<rect x="418" y="154" width="22" height="22" rx="3" fill="#2b788c"/>
+<rect x="444" y="154" width="22" height="22" rx="3" fill="#39a77b"/>
+<rect x="470" y="154" width="22" height="22" rx="3" fill="#7ecf56"/>
+<rect x="496" y="154" width="22" height="22" rx="3" fill="#3d4280"/>
+<rect x="418" y="180" width="22" height="22" rx="3" fill="#39a77b"/>
+<rect x="444" y="180" width="22" height="22" rx="3" fill="#7ecf56"/>
+<rect x="470" y="180" width="22" height="22" rx="3" fill="#3d4280"/>
+<rect x="496" y="180" width="22" height="22" rx="3" fill="#2b788c"/>
+<rect x="418" y="206" width="22" height="22" rx="3" fill="#7ecf56"/>
+<rect x="444" y="206" width="22" height="22" rx="3" fill="#3d4280"/>
+<rect x="470" y="206" width="22" height="22" rx="3" fill="#2b788c"/>
+<rect x="496" y="206" width="22" height="22" rx="3" fill="#39a77b"/>
+<text x="470" y="310" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#46546b" text-anchor="middle">on-board FPGA, 30+ FPS</text>
+</svg>

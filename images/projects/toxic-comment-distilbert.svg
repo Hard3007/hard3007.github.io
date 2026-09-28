@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img">
+<title>Bar chart of toxicity label probabilities predicted for one comment</title>
+<rect width="640" height="400" fill="#f8fafa"/>
+<text x="196" y="97" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#14213a" text-anchor="end">toxic</text>
+<rect x="212" y="78" width="340" height="26" rx="5" fill="#dfe6e8"/>
+<rect x="212" y="78" width="309" height="26" rx="5" fill="#cfde37"/>
+<text x="513.4000000000001" y="96" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#14213a" text-anchor="end">0.91</text>
+<text x="196" y="141" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#14213a" text-anchor="end">insult</text>
+<rect x="212" y="122" width="340" height="26" rx="5" fill="#dfe6e8"/>
+<rect x="212" y="122" width="218" height="26" rx="5" fill="#55c068"/>
+<text x="437.6" y="140" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#14213a" text-anchor="start">0.64</text>
+<text x="196" y="185" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#14213a" text-anchor="end">obscene</text>
+<rect x="212" y="166" width="340" height="26" rx="5" fill="#dfe6e8"/>
+<rect x="212" y="166" width="129" height="26" rx="5" fill="#22928b"/>
+<text x="349.2" y="184" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#14213a" text-anchor="start">0.38</text>
+<text x="196" y="229" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#14213a" text-anchor="end">severe toxic</text>
+<rect x="212" y="210" width="340" height="26" rx="5" fill="#dfe6e8"/>
+<rect x="212" y="210" width="41" height="26" rx="5" fill="#365e8b"/>
+<text x="260.8" y="228" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#14213a" text-anchor="start">0.12</text>
+<text x="196" y="273" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#14213a" text-anchor="end">threat</text>
+<rect x="212" y="254" width="340" height="26" rx="5" fill="#dfe6e8"/>
+<rect x="212" y="254" width="24" height="26" rx="5" fill="#3a548b"/>
+<text x="243.8" y="272" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#14213a" text-anchor="start">0.07</text>
+<text x="196" y="317" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#14213a" text-anchor="end">identity hate</text>
+<rect x="212" y="298" width="340" height="26" rx="5" fill="#dfe6e8"/>
+<rect x="212" y="298" width="17" height="26" rx="5" fill="#3b4f89"/>
+<text x="237.0" y="316" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#14213a" text-anchor="start">0.05</text>
+<text x="382" y="360" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#46546b" text-anchor="middle">multi-label probabilities for one comment</text>
+</svg>

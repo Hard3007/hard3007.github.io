@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Attention lab | Hard Gondaliya</title>
+    <meta name="author" content="Hard Gondaliya" />
+    <meta
+      name="description"
+      content="Type a sentence and watch one Transformer self-attention head decide which words to look at, computed live in your browser."
+    />
+    <meta name="theme-color" content="#edf1f2" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Attention lab | Hard Gondaliya" />
+    <meta
+      property="og:description"
+      content="An interactive self-attention heatmap built with plain JavaScript."
+    />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="./images/favicon-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/lab.css" />
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/pages/lab.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a class="site-mark" href="./index.html">Hard Gondaliya</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-list" id="nav-list">
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./projects.html">Projects</a></li>
+            <li>
+              <a class="nav-link" href="./lab.html" aria-current="page"
+                >Attention lab</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="main">
+      <div class="page-intro">
+        <h1 class="page-title">Attention lab</h1>
+        <p class="lede">
+          Type a sentence and watch one self-attention head decide which words
+          to look at. It's the core computation of the Transformer I built from
+          scratch in PyTorch, shrunk down to run in your browser.
+        </p>
+        <p class="ai-note">
+          This page was generated with AI. It was written by Claude (Anthropic)
+          to meet the AI-generated page requirement of CS5610 Project 1. The
+          README lists the model, the prompts and what was changed by hand.
+        </p>
+      </div>
+
+      <div class="lab">
+        <form class="lab-controls" aria-labelledby="controls-title">
+          <h2 class="lab-heading" id="controls-title">Inputs</h2>
+
+          <div class="field">
+            <label class="field-label" for="lab-input">Sentence</label>
+            <input
+              class="lab-input"
+              id="lab-input"
+              type="text"
+              name="sentence"
+              value="The satellite camera sees clouds while the model reads the image"
+              maxlength="160"
+              autocomplete="off"
+              spellcheck="false"
+              aria-describedby="lab-word-count"
+            />
+            <p class="field-hint lab-word-count" id="lab-word-count">
+              Up to 12 words.
+            </p>
+          </div>
+
+          <div class="field">
+            <p class="field-label" id="presets-label">
+              Or start from an example
+            </p>
+            <div
+              class="preset-list"
+              role="group"
+              aria-labelledby="presets-label"
+            >
+              <button
+                class="preset-button"
+                type="button"
+                data-sentence="The satellite camera sees clouds while the model reads the image"
+              >
+                Satellite image
+              </button>
+              <button
+                class="preset-button"
+                type="button"
+                data-sentence="Quantize the model so it fits on a tiny FPGA chip"
+              >
+                FPGA chip
+              </button>
+              <button
+                class="preset-button"
+                type="button"
+                data-sentence="Read the contract and flag every clause about your data"
+              >
+                Contract clause
+              </button>
+              <button
+                class="preset-button"
+                type="button"
+                data-sentence="The detector spots bottles and cans on the conveyor belt"
+              >
+                Conveyor belt
+              </button>
+            </div>
+          </div>
+
+          <fieldset class="field lab-fieldset">
+            <legend class="field-label">Attention head</legend>
+            <label class="choice">
+              <input
+                class="lab-head"
+                type="radio"
+                name="head"
+                value="meaning"
+                checked
+              />
+              Meaning (tiny concept lexicon)
+            </label>
+            <label class="choice">
+              <input
+                class="lab-head"
+                type="radio"
+                name="head"
+                value="spelling"
+              />
+              Spelling (three-letter chunks)
+            </label>
+            <label class="choice">
+              <input
+                class="lab-head"
+                type="radio"
+                name="head"
+                value="position"
+              />
+              Position (word order only)
+            </label>
+            <label class="choice">
+              <input
+                class="lab-head"
+                type="radio"
+                name="head"
+                value="untrained"
+              />
+              Untrained (random weights)
+            </label>
+            <p class="field-hint lab-head-note">
+              Words from the same concept group pull strongly toward each other.
+            </p>
+          </fieldset>
+
+          <div class="field">
+            <label class="choice">
+              <input class="lab-causal" type="checkbox" name="causal" />
+              Causal mask: words can only look backward, as in GPT-style models
+            </label>
+          </div>
+
+          <div class="field">
+            <div class="field-row">
+              <label class="field-label" for="lab-temperature"
+                >Temperature</label
+              >
+              <output class="lab-temperature-value" for="lab-temperature"
+                >1.00</output
+              >
+            </div>
+            <input
+              class="lab-temperature"
+              id="lab-temperature"
+              type="range"
+              name="temperature"
+              min="0.25"
+              max="3"
+              step="0.25"
+              value="1"
+              aria-describedby="temperature-hint"
+            />
+            <p class="field-hint" id="temperature-hint">
+              Lower is sharper, higher spreads attention out.
+            </p>
+          </div>
+        </form>
+
+        <section class="lab-output" aria-labelledby="output-title">
+          <h2 class="lab-heading" id="output-title">Attention weights</h2>
+          <p class="lab-output-hint">
+            Each row is one word asking what it should look at. The row's cells
+            split its attention across the sentence and add up to 100%. Select a
+            word in the first column to read its row.
+          </p>
+          <div
+            class="heatmap-scroll"
+            role="region"
+            aria-label="Attention heatmap, scrolls sideways on small screens"
+            tabindex="0"
+          >
+            <table class="heatmap"></table>
+          </div>
+          <div class="heatmap-legend" aria-hidden="true">
+            <span class="heatmap-legend-label">0%</span>
+            <span class="heatmap-legend-bar"></span>
+            <span class="heatmap-legend-label">100%</span>
+          </div>
+          <p class="lab-readout" aria-live="polite">
+            Turn on JavaScript to compute attention for your sentence.
+          </p>
+        </section>
+      </div>
+
+      <section class="section" aria-labelledby="how-title">
+        <h2 class="section-title" id="how-title">How it works</h2>
+        <div class="section-body prose">
+          <ol class="steps">
+            <li>
+              <strong>Split the sentence into words.</strong> Each word is a
+              token.
+            </li>
+            <li>
+              <strong>Turn each word into a vector.</strong> This page builds
+              vectors by hand: three-letter spelling chunks, sine-wave position
+              codes from the original Transformer paper, and a small lexicon of
+              about 80 engineering words.
+            </li>
+            <li>
+              <strong>Score every pair of words.</strong> The score for word
+              <var>i</var> looking at word <var>j</var> is the dot product of
+              their vectors divided by the square root of the vector size.
+            </li>
+            <li>
+              <strong>Optionally hide the future.</strong> With the causal mask
+              on, scores for later words become negative infinity, so they get
+              zero weight.
+            </li>
+            <li>
+              <strong>Apply softmax.</strong> Each row of scores is divided by
+              the temperature, then turned into weights that add up to 1.
+            </li>
+          </ol>
+          <p>
+            This is a teaching toy, not a trained model. Real Transformers learn
+            their vectors and projection matrices from huge amounts of text and
+            run many heads across many layers. For the trained version, see my
+            <a href="./projects.html#language"
+              >Transformer language model from scratch</a
+            >.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer-inner">
+        <p class="footer-note">
+          © <span class="current-year">2026</span> Hard Gondaliya. Built with
+          plain HTML, CSS and JavaScript modules.
+        </p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/Hard3007">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/hard-gondaliya">LinkedIn</a>
+          </li>
+          <li><a href="./files/Hard_Gondaliya_Resume.pdf">Résumé</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

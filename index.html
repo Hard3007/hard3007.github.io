@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hard Gondaliya | Machine learning engineer</title>
+    <meta name="author" content="Hard Gondaliya" />
+    <meta
+      name="description"
+      content="Hard Gondaliya is a machine learning engineer and MS Computer Science student at Northeastern University, working on computer vision, LLMs and RAG, and edge deployment."
+    />
+    <meta name="theme-color" content="#edf1f2" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Hard Gondaliya | Machine learning engineer"
+    />
+    <meta
+      property="og:description"
+      content="Computer vision, LLMs and RAG, and models that fit on a chip."
+    />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="./images/favicon-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/pages/home.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a class="site-mark" href="./index.html">Hard Gondaliya</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-list" id="nav-list">
+            <li>
+              <a class="nav-link" href="./index.html" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li><a class="nav-link" href="./projects.html">Projects</a></li>
+            <li><a class="nav-link" href="./lab.html">Attention lab</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="main">
+      <section class="hero" aria-labelledby="hero-name">
+        <h1 class="hero-name" id="hero-name">Hard Gondaliya</h1>
+        <p class="hero-role">
+          Machine learning engineer and MS Computer Science student at
+          Northeastern University, Boston.
+        </p>
+
+        <div class="attention-hero">
+          <svg class="attention-arcs" aria-hidden="true"></svg>
+          <p class="hero-sentence">
+            I build machine learning that sees from orbit, reads the fine print,
+            and fits on a chip.
+          </p>
+        </div>
+        <p class="hero-caption" aria-live="polite">
+          This sentence is a live self-attention demo. Turn on JavaScript to
+          point at a word and see which other words it attends to.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="./projects.html"
+            >See my projects</a
+          >
+          <a class="button" href="mailto:gondaliya.h@northeastern.edu"
+            >Email me</a
+          >
+          <a class="hero-actions-link" href="./lab.html"
+            >Try the attention lab with your own sentence</a
+          >
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title">About</h2>
+        <div class="section-body prose">
+          <p>
+            I'm a machine learning engineer pursuing an MS in Computer Science
+            at Northeastern University's Khoury College in Boston. My work sits
+            where models meet real limits: satellite imagery that has to be
+            processed on board, dense legal text that needs answers you can
+            trace back to a clause, and detectors that have to keep up with a
+            moving conveyor belt.
+          </p>
+          <p>
+            Before Northeastern I earned a B.Tech in Computer Engineering at
+            NMIMS University and interned at ISRO's Space Applications Centre,
+            SVNIT, Prowiz Infotech and Inficial Infotech. I also co-authored a
+            peer-reviewed review of machine learning for waste management,
+            published by Springer.
+          </p>
+          <p>
+            I'm looking for machine learning and data science internships and
+            co-op roles.
+          </p>
+
+          <ul class="education-list">
+            <li class="education-item">
+              <h3 class="education-degree">MS in Computer Science</h3>
+              <p class="education-detail">
+                Northeastern University, Khoury College of Computer Sciences,
+                Boston.
+                <time datetime="2025-09">Sep 2025</time> to
+                <time datetime="2027-05">May 2027</time>.
+              </p>
+              <p class="education-detail">
+                Coursework: Natural Language Processing, Foundations of AI,
+                Algorithms, Database Management Systems.
+              </p>
+            </li>
+            <li class="education-item">
+              <h3 class="education-degree">B.Tech in Computer Engineering</h3>
+              <p class="education-detail">
+                NMIMS University, Shirpur, India.
+                <time datetime="2021-06">Jun 2021</time> to
+                <time datetime="2025-05">May 2025</time>.
+              </p>
+              <p class="education-detail">
+                Coursework: Machine Learning, Data Structures, Image and Video
+                Processing, Computer Networks.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience-title">
+        <h2 class="section-title" id="experience-title">Experience</h2>
+        <div class="section-body">
+          <ol class="timeline">
+            <li class="timeline-item">
+              <p class="timeline-date">
+                <time datetime="2025-01">Jan 2025</time> to
+                <time datetime="2025-05">May 2025</time>
+              </p>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Machine Learning Intern</h3>
+                <p class="timeline-org">
+                  Space Applications Centre (SAC), ISRO, Ahmedabad, India
+                </p>
+                <ul class="timeline-points">
+                  <li>
+                    Built a real-time CNN inference pipeline on FPGA for
+                    high-throughput satellite imagery, running at 30+ FPS and
+                    cutting latency by 40%.
+                  </li>
+                  <li>
+                    Designed the workflow for image reconstruction,
+                    preprocessing and inference across 10,000+ images a day.
+                  </li>
+                  <li>
+                    Quantized and deployed models on FPGA hardware with Vitis
+                    AI, holding 98% accuracy within on-board resource limits.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <p class="timeline-date">
+                <time datetime="2024-05">May 2024</time> to
+                <time datetime="2024-07">Jul 2024</time>
+              </p>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Machine Learning Engineer Intern</h3>
+                <p class="timeline-org">
+                  Sardar Vallabhbhai National Institute of Technology (SVNIT),
+                  Surat, India
+                </p>
+                <ul class="timeline-points">
+                  <li>
+                    Investigated plant disease detection on the PlantDoc
+                    dataset, evaluating 2,500+ annotated images for publication.
+                  </li>
+                  <li>
+                    Trained deep neural networks to 95.8% peak validation
+                    accuracy using CLAHE and Local Binary Pattern preprocessing.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <p class="timeline-date">
+                <time datetime="2024-03">Mar 2024</time> to
+                <time datetime="2024-04">Apr 2024</time>
+              </p>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Data Science Intern</h3>
+                <p class="timeline-org">Prowiz Infotech LLP, remote, India</p>
+                <ul class="timeline-points">
+                  <li>
+                    Cleaned and quality-checked 50,000+ records, improving
+                    downstream model precision by 15%.
+                  </li>
+                  <li>
+                    Benchmarked 5+ machine learning algorithms while managing
+                    production data pipelines, cutting pipeline runtime by 20%.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <p class="timeline-date">
+                <time datetime="2023-05">May 2023</time> to
+                <time datetime="2023-07">Jul 2023</time>
+              </p>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Software Engineer Intern</h3>
+                <p class="timeline-org">
+                  Inficial Infotech Pvt. Ltd., Surat, India
+                </p>
+                <ul class="timeline-points">
+                  <li>
+                    Built a full-stack observability dashboard (React, FastAPI,
+                    PostgreSQL) tracking uptime and latency across 8 core
+                    microservices, with Slack alerts that cut incident discovery
+                    time by an estimated 15 minutes.
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <h2 class="section-title" id="skills-title">Skills</h2>
+        <div class="section-body">
+          <dl class="skills-grid">
+            <div class="skill-group">
+              <dt class="skill-group-name">Languages</dt>
+              <dd class="skill-group-items">Python, SQL, Java, C++, R</dd>
+            </div>
+            <div class="skill-group">
+              <dt class="skill-group-name">LLMs and generative AI</dt>
+              <dd class="skill-group-items">
+                Retrieval-augmented generation (RAG), fine-tuning, transfer
+                learning, Hugging Face, LangChain, FAISS, prompt engineering
+              </dd>
+            </div>
+            <div class="skill-group">
+              <dt class="skill-group-name">
+                Machine learning and deep learning
+              </dt>
+              <dd class="skill-group-items">
+                PyTorch, TensorFlow, scikit-learn, OpenCV, YOLOv11, CNNs,
+                Transformers, NLP, hyperparameter tuning
+              </dd>
+            </div>
+            <div class="skill-group">
+              <dt class="skill-group-name">Edge deployment</dt>
+              <dd class="skill-group-items">
+                Model quantization, Vitis AI, FPGA inference
+              </dd>
+            </div>
+            <div class="skill-group">
+              <dt class="skill-group-name">Cloud and MLOps</dt>
+              <dd class="skill-group-items">
+                AWS (EC2, S3), Docker, MLflow, FastAPI, Git, Linux
+              </dd>
+            </div>
+            <div class="skill-group">
+              <dt class="skill-group-name">Data and analytics</dt>
+              <dd class="skill-group-items">
+                NumPy, pandas, Matplotlib, Seaborn, EDA, feature engineering,
+                ETL pipelines, Power BI, Tableau, Excel
+              </dd>
+            </div>
+            <div class="skill-group">
+              <dt class="skill-group-name">Databases</dt>
+              <dd class="skill-group-items">PostgreSQL, MySQL, MongoDB</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="work-title">
+        <h2 class="section-title" id="work-title">Selected work</h2>
+        <div class="section-body">
+          <ul class="featured-list">
+            <li class="featured-item">
+              <img
+                class="featured-image"
+                src="./images/projects/tos-risk-analyzer.svg"
+                alt="Diagram of contract text chunks retrieved from a vector index into a cited risk summary"
+                width="640"
+                height="400"
+              />
+              <h3 class="featured-title">Terms of Service Risk Analyzer</h3>
+              <p class="featured-summary">
+                A RAG system that reads dense user agreements and flags hidden
+                privacy and arbitration clauses, citing the exact passage.
+              </p>
+              <a href="./projects.html#language">Read about this project</a>
+            </li>
+            <li class="featured-item">
+              <img
+                class="featured-image"
+                src="./images/projects/transformer-from-scratch.svg"
+                alt="Heatmap of a causal self-attention matrix with the upper triangle masked"
+                width="640"
+                height="400"
+              />
+              <h3 class="featured-title">
+                Transformer language model from scratch
+              </h3>
+              <p class="featured-summary">
+                Multi-head attention, positional encodings and causal masking
+                written by hand in PyTorch, reaching 5.30 perplexity.
+              </p>
+              <a href="./projects.html#language">Read about this project</a>
+            </li>
+          </ul>
+          <p class="featured-more">
+            <a href="./projects.html"
+              >See all six projects and my publication</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+        <div class="section-body">
+          <p class="contact-lead">Email is the fastest way to reach me.</p>
+          <a class="contact-email" href="mailto:gondaliya.h@northeastern.edu"
+            >gondaliya.h@northeastern.edu</a
+          >
+          <ul class="contact-list">
+            <li>
+              <a href="https://www.linkedin.com/in/hard-gondaliya">LinkedIn</a>
+            </li>
+            <li><a href="https://github.com/Hard3007">GitHub</a></li>
+            <li>
+              <a href="./files/Hard_Gondaliya_Resume.pdf">Résumé (PDF)</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer-inner">
+        <p class="footer-note">
+          © <span class="current-year">2026</span> Hard Gondaliya. Built with
+          plain HTML, CSS and JavaScript modules.
+        </p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/Hard3007">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/hard-gondaliya">LinkedIn</a>
+          </li>
+          <li><a href="./files/Hard_Gondaliya_Resume.pdf">Résumé</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
