@@ -5,7 +5,7 @@ Computer Science student at Northeastern University. Built with vanilla HTML5,
 CSS3 and ES6 modules, with no frameworks or libraries.
 
 - **Live site:** https://hard3007.github.io/
-- **Demo video:** _add the link to your narrated video here_
+- **Demo video:** https://youtu.be/Tjuf5ofsNmM
 - **Design document:** [docs/design-document.md](docs/design-document.md)
 - **Slides ppt:** [https://docs.google.com/presentation/d/1enGYWI5TbWMFGkQjW5wOAijumX6nqJwImx6Pqzk_Lrc/edit?usp=sharing]
 
