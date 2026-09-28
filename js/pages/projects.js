@@ -33,7 +33,7 @@ function initProjectFilter(toolbar) {
     buttons.forEach((button) => {
       button.setAttribute(
         "aria-pressed",
-        String(button.dataset.filter === filter),
+        String(button.dataset.filter === filter)
       );
     });
 

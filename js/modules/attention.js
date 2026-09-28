@@ -200,10 +200,10 @@ export function meaningEmbedding(word) {
   const root = stem(word);
   return CONCEPTS.map((concept) =>
     LEXICON[concept].some(
-      (entry) => entry === root || entry === word.toLowerCase(),
+      (entry) => entry === root || entry === word.toLowerCase()
     )
       ? 1
-      : 0,
+      : 0
   );
 }
 
@@ -217,7 +217,7 @@ function softmax(scores) {
   const finite = scores.filter((value) => Number.isFinite(value));
   const max = Math.max(...finite);
   const exps = scores.map((value) =>
-    Number.isFinite(value) ? Math.exp(value - max) : 0,
+    Number.isFinite(value) ? Math.exp(value - max) : 0
   );
   const total = exps.reduce((sum, value) => sum + value, 0);
   return exps.map((value) => value / total);
@@ -227,7 +227,7 @@ function softmax(scores) {
 function randomMatrix(rows, cols, seed) {
   const random = seededRandom(seed);
   return Array.from({ length: rows }, () =>
-    Array.from({ length: cols }, () => (random() * 2 - 1) / Math.sqrt(cols)),
+    Array.from({ length: cols }, () => (random() * 2 - 1) / Math.sqrt(cols))
   );
 }
 
@@ -257,8 +257,8 @@ const HEADS = {
   untrained(tokens) {
     const inputs = tokens.map((token, i) =>
       spellingEmbedding(token).map(
-        (value, k) => value + positionalEncoding(i)[k],
-      ),
+        (value, k) => value + positionalEncoding(i)[k]
+      )
     );
     const size = 16;
     const wq = randomMatrix(size, DIM, 7);
@@ -284,19 +284,19 @@ export const HEAD_NAMES = Object.keys(HEADS);
  */
 export function attentionMatrix(
   tokens,
-  { head = "meaning", causal = false, temperature = 1 } = {},
+  { head = "meaning", causal = false, temperature = 1 } = {}
 ) {
   if (!HEADS[head]) {
     throw new Error(
-      `Unknown head "${head}". Use one of: ${HEAD_NAMES.join(", ")}`,
+      `Unknown head "${head}". Use one of: ${HEAD_NAMES.join(", ")}`
     );
   }
   const score = HEADS[head](tokens);
   const t = Math.max(temperature, 0.05);
   return tokens.map((_, i) =>
     softmax(
-      tokens.map((__, j) => (causal && j > i ? -Infinity : score(i, j) / t)),
-    ),
+      tokens.map((__, j) => (causal && j > i ? -Infinity : score(i, j) / t))
+    )
   );
 }
 

@@ -40,7 +40,7 @@ function interestingRow(tokens) {
   const index = concepts.findIndex(
     (concept, i) =>
       concept !== null &&
-      concepts.some((other, j) => j !== i && other === concept),
+      concepts.some((other, j) => j !== i && other === concept)
   );
   return Math.max(index, 0);
 }
@@ -97,7 +97,7 @@ function initLab(root) {
         const td = createElement(
           "td",
           "heatmap-cell",
-          masked ? "" : percent(value),
+          masked ? "" : percent(value)
         );
         if (masked) {
           td.classList.add("is-masked");
@@ -115,7 +115,7 @@ function initLab(root) {
     const caption = createElement(
       "caption",
       "visually-hidden",
-      `Attention weights for: ${tokens.join(" ")}`,
+      `Attention weights for: ${tokens.join(" ")}`
     );
     table.replaceChildren(caption, head, body);
   }

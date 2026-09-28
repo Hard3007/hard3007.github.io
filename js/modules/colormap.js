@@ -59,7 +59,7 @@ const TEXT_CHOICES = [
 export function textColorFor(value) {
   const background = viridis(value);
   const passing = TEXT_CHOICES.find(
-    (choice) => contrast(choice.rgb, background) >= 4.5,
+    (choice) => contrast(choice.rgb, background) >= 4.5
   );
   return passing ? passing.css : "#000000";
 }

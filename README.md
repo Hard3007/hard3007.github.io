@@ -132,7 +132,6 @@ double-clicking the HTML file.
 | Flexbox and grid                         | Flexbox for header, nav and filters; CSS grid for sections, projects and the lab                                          |
 | MIT license                              | [LICENSE](LICENSE)                                                                                                        |
 
-
 **What the AI generated:**
 
 - All three HTML pages, with the content taken from my résumé.
